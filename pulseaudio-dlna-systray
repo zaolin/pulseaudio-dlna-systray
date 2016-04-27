@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 
 import os
 import sys
@@ -13,7 +13,7 @@ class MainClass:
 
   def __init__(self):
     self.statusIcon = gtk.StatusIcon()
-    self.statusIcon.set_from_file(sys.path[0] + '/systray_icon.png')
+    self.statusIcon.set_from_file('/usr/share/pulseaudio-dlna-systray/icon.png')
     self.statusIcon.set_tooltip('Pulseaudio DLNA Server')
     self.statusIcon.set_visible(True)
 
